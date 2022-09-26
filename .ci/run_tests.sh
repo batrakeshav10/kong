@@ -56,7 +56,7 @@ if [ "$TEST_SUITE" == "dbless" ]; then
 fi
 if [ "$TEST_SUITE" == "plugins" ]; then
     set +ex
-    rm -f .failed
+    rm -f.failed
 
     if [[ "$TEST_SPLIT" == first* ]]; then
         # GitHub Actions, run first batch of plugin tests
